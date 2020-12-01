@@ -139,7 +139,7 @@ resource "aws_instance" "web_server_instance" {
             sudo apt update -y 
             sudo apt install apache2 -y
             sudo systemctl start apache2
-            sudo ash -c "echo your very first terraform shit > /var/www/html/index.html"
+            sudo bash -c "echo your very first terraform shit > /var/www/html/index.html"
             EOF
 
   tags = {
